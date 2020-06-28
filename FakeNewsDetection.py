@@ -151,7 +151,7 @@ print (classification_report(Y_test, predictions_NB))
 # Support Vector Machine
 fake_detector_svm = SGDClassifier().fit(X_train, Y_train)
 predictions_svm = fake_detector_svm.predict(X_test)
-print (classification_report(Y_test, prediction_svm))
+print (classification_report(Y_test, predictions_svm))
 
 # Logistic regression.
 fake_detector_logreg = LogisticRegression().fit(X_train, Y_train)
